@@ -7,7 +7,8 @@
     <title> post details </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
-   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body style="background-color:#f7f7f7;">
@@ -157,7 +158,8 @@
         let users = document.querySelector('.user_post');
 
 
-        getparam()
+        getparam();
+        logout();
         function goprofilepage() {
             let user = JSON.parse(localStorage.getItem('user'));
             let userid = user.id;
@@ -252,6 +254,7 @@
                 document.getElementById("nav_width").classList.add("col-12");
                 document.getElementById("user-post").classList.add("col-12");
                 document.getElementById("mohammed").classList.add("col-12");
+                // document.getElementById('nav').classList.remove('container');
                 
             }
         };
@@ -262,6 +265,7 @@
                 document.getElementById("nav_width").classList.add("col-12");
                 document.getElementById("user-post").classList.add("col-12");
                 document.getElementById("mohammed").classList.add("col-12");
+                // document.getElementById('nav').classList.remove('container');
             }
         });
 
