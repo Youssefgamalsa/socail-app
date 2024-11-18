@@ -4,23 +4,23 @@ let loginbtn = document.querySelector("#login");
 let registerbtn = document.querySelector("#register");
 let logoutbtn = document.querySelector("#logout");
 // let blath = document.querySelector("#blath");
-let userimg = document.querySelector(".user-img");
+// let userimg = document.querySelector(".user-img");
 let user_username = document.querySelector("#user-username");
 // let users = document.querySelector(".posts");
 
 let close = document.querySelector("#close");
 let close1 = document.querySelector("#close1");
 
-function getuserimg() {
-  let user = JSON.parse(localStorage.getItem("user"));
-  if (typeof user.profile_image == "string") {
-    userimg.src = user.profile_image;
-  } else {
-    userimg.src = "13.jpg";
-  }
-  user_username.innerHTML = user.username;
-}
-getuserimg();
+// function getuserimg() {
+//   let user = JSON.parse(localStorage.getItem("user"));
+//   if (typeof user.profile_image == "string") {
+//     userimg.src = user.profile_image;
+//   } else {
+//     userimg.src = "13.jpg";
+//   }
+//   user_username.innerHTML = user.username;
+// }
+// getuserimg();
 
 function create(mess, color) {
   const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
@@ -45,15 +45,15 @@ function logout() {
     logoutbtn.style.display = "block";
     // blath.style.display = "block";
     user_username.style.display = "block";
-    userimg.style.display = "block";
-    getuserimg();
+    // userimg.style.display = "block";
+    // getuserimg();
   } else {
     loginbtn.style.display = "block";
     registerbtn.style.display = "block";
     logoutbtn.style.display = "none";
     // blath.style.display = "none";
     user_username.style.display = "none";
-    userimg.style.display = "none";
+    // userimg.style.display = "none";
   }
 }
 

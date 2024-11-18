@@ -75,15 +75,15 @@ function logout() {
     logoutbtn.style.display = "block";
     blath.style.display = "block";
     user_username.style.display = "block";
-    userimg.style.display = "block";
-    getuserimg();
+    // userimg.style.display = "block";
+    // getuserimg();
   } else {
     loginbtn.style.display = "block";
     registerbtn.style.display = "block";
     logoutbtn.style.display = "none";
     blath.style.display = "none";
     user_username.style.display = "none";
-    userimg.style.display = "none";
+    // userimg.style.display = "none";
   }
 }
 
