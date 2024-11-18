@@ -9,7 +9,7 @@ function getposts(i) {
   axios
     .get("https://tarmeezacademy.com/api/v1/posts", {
       params: {
-        limit: "100",
+        limit: "10",
       },
     })
     .then((response) => {
